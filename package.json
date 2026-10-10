@@ -11,15 +11,23 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gabrielll04/CodeArena.git",
-    "directory": "plugins/react-native"
+    "url": "git+https://github.com/Gabrielll04/CodeArena.git"
   },
   "homepage": "https://github.com/Gabrielll04/CodeArena/tree/HEAD/plugins/react-native#readme",
   "bugs": "https://github.com/Gabrielll04/CodeArena/issues",
   "exports": {
-    ".": "./src/index.ts",
-    "./ui": "./src/ui/index.tsx",
-    "./sandbox": "./src/sandbox/runtime.tsx"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./ui": {
+      "types": "./dist/ui.d.ts",
+      "import": "./dist/ui.js"
+    },
+    "./sandbox": {
+      "types": "./dist/sandbox.d.ts",
+      "import": "./dist/sandbox.js"
+    }
   },
   "files": [
     "dist",
@@ -45,9 +53,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@codearena/core": "workspace:^",
-    "@codearena/plugin-sdk": "workspace:^",
-    "@codearena/schemas": "workspace:^",
+    "@codearena/core": "^0.1.0",
+    "@codearena/plugin-sdk": "^0.1.0",
+    "@codearena/schemas": "^0.1.0",
     "@types/node": "^22.10.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
@@ -58,22 +66,7 @@
     "vitest": "^3.2.4"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true,
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js"
-      },
-      "./ui": {
-        "types": "./dist/ui.d.ts",
-        "import": "./dist/ui.js"
-      },
-      "./sandbox": {
-        "types": "./dist/sandbox.d.ts",
-        "import": "./dist/sandbox.js"
-      }
-    }
+    "access": "public"
   },
   "codearena": {
     "pluginId": "react-native",
