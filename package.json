@@ -1,6 +1,6 @@
 {
   "name": "@codearena/plugin-react-native",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "description": "Plugin CodeArena para questões de React Native com preview em moldura de celular.",
   "keywords": [
@@ -11,10 +11,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gabrielll04/CodeArena.git"
+    "url": "git+https://github.com/Gabrielll04/codearena-plugin-react-native.git"
   },
-  "homepage": "https://github.com/Gabrielll04/CodeArena/tree/HEAD/plugins/react-native#readme",
-  "bugs": "https://github.com/Gabrielll04/CodeArena/issues",
+  "homepage": "https://github.com/Gabrielll04/codearena-plugin-react-native#readme",
+  "bugs": "https://github.com/Gabrielll04/codearena-plugin-react-native/issues",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
